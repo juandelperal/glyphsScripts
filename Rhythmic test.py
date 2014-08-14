@@ -38,4 +38,5 @@ for thisLayer in selectedLayers:
 	outputString +='/'+thisGlyphName+'/'+spacingGlyph
 
 #print outputString
+Glyphs.clearLog()
 Doc.windowController().performSelectorOnMainThread_withObject_waitUntilDone_( "addTabWithString:", outputString, True )
