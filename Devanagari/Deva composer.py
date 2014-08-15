@@ -19,8 +19,7 @@ for thisGlyph in selectedGlyphs:
 # Halform
 for thisGlyph in selectedGlyphs:
 	if thisGlyph.script == 'devanagari' and thisGlyph.category =='Letter' and thisGlyph.subCategory =='Halfform':
-		outputString += '/' + thisGlyph.name.replace("-deva","a-deva/halant-deva") + '  '
-
+		outputString += '/' + thisGlyph.name.replace("-","a-deva/halant-") + '  '
 
 # print outputString
 
