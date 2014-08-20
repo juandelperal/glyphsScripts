@@ -1,6 +1,6 @@
 # About these scripts
 
-These are some simple and useful scripts for work in [Glyphs](http://glyphsapp.com/).
+These are some stupid and maybe useful scripts for work in [Glyphs](http://glyphsapp.com/).
 
 
 # How to install
@@ -8,8 +8,8 @@ These are some simple and useful scripts for work in [Glyphs](http://glyphsapp.c
 Open Terminal and run: 
     
     cd ~/Library/Containers/com.schriftgestaltung.Glyphs/Data/Library/Application\ Support/Glyphs/Scripts
-    git clone https://github.com/juandelperal/glyphsScripts.git 
+    git clone https://github.com/juandelperal/glyphsScripts.git Juan
     
-And then restart Glyphs (or run `Reload Scripts` from the `Scripts` menu)
+And then restart Glyphs (or hit `Reload Scripts` from the `Scripts` menu)
 
 Enjoy!

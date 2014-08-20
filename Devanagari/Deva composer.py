@@ -11,15 +11,16 @@ selectedGlyphs = [ x.parent for x in Font.selectedLayers ]
 
 outputString = ''
 
-# Conjuncts
 for thisGlyph in selectedGlyphs:
+	# Conjuncts
 	if thisGlyph.script == 'devanagari' and thisGlyph.category =='Letter' and thisGlyph.subCategory =='Ligature':
 		outputString += '/' + thisGlyph.name.replace("_","a-deva/halant-deva/") + '  '
-
-# Halform
-for thisGlyph in selectedGlyphs:
-	if thisGlyph.script == 'devanagari' and thisGlyph.category =='Letter' and thisGlyph.subCategory =='Halfform':
+	# Halform
+	elif thisGlyph.script == 'devanagari' and thisGlyph.category =='Letter' and thisGlyph.subCategory =='Halfform':
 		outputString += '/' + thisGlyph.name.replace("-","a-deva/halant-") + '  '
+	# Others
+	else:
+		outputString += '/' + thisGlyph.name + '  '
 
 # print outputString
 
