@@ -9,11 +9,13 @@ Doc = Glyphs.currentDocument
 Font = Glyphs.font
 selectedLayers = Font.selectedLayers
 
-outputString ="/aaMatra-deva"
+interCharacter = "/aaMatra-deva"
+
+outputString = interCharacter
 
 for thisLayer in selectedLayers:
 	thisGlyphName = thisLayer.parent.name
-	outputString +='/'+thisGlyphName+'/aaMatra-deva'
+	outputString +='/'+thisGlyphName+ interCharacter
 
 
 Doc.windowController().performSelectorOnMainThread_withObject_waitUntilDone_( "addTabWithString:", outputString, True )
