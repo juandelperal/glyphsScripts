@@ -20,11 +20,12 @@ except:
 for thisLayer in selectedLayers:
 	# Reset array
 	components = [ component for component in thisLayer.components if Font.glyphs[ component.componentName ].category == 'Letter']
+	last = len(components) - 1
 
 	if len(components) > 0:
 		# select last component
-		componentName = thisLayer.components[count].componentName
-		componentOffset = thisLayer.components[count].position.x
+		componentName = thisLayer.components[last].componentName
+		componentOffset = thisLayer.components[last].position.x
 
 		# select glyph referenced on last component
 		componentLayer = Font.glyphs[ componentName ].layers[ FontMaster.id ]
