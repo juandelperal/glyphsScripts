@@ -19,16 +19,9 @@ except:
 
 for thisLayer in selectedLayers:
 	# Reset array
-	components = ''
-	
-	for component in thisLayer.components:
-		if Font.glyphs[ component.componentName ].category == 'Letter':
-			components += component.componentName + ' '
+	components = [ component for component in thisLayer.components if Font.glyphs[ component.componentName ].category == 'Letter']
 
-	# Count valid components
-	count = len(components.split())
-
-	if count > 0:
+	if len(components) > 0:
 		# select last component
 		componentName = thisLayer.components[count - 1].componentName
 		componentOffset = thisLayer.components[count - 1].position.x
