@@ -23,8 +23,8 @@ for thisLayer in selectedLayers:
 
 	if len(components) > 0:
 		# select last component
-		componentName = thisLayer.components[count - 1].componentName
-		componentOffset = thisLayer.components[count - 1].position.x
+		componentName = thisLayer.components[count].componentName
+		componentOffset = thisLayer.components[count].position.x
 
 		# select glyph referenced on last component
 		componentLayer = Font.glyphs[ componentName ].layers[ FontMaster.id ]
