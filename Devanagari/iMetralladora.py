@@ -1,7 +1,7 @@
 #MenuTitle: iMetralladora
 # -*- coding: utf-8 -*-
 __doc__="""
-Combine selected with iMatra character. Useful for test 'pres' feature for Devanagari fonts
+Combine selected with iMatra character. Useful for test 'pres' feature on Devanagari fonts
 """
 import GlyphsApp
 
