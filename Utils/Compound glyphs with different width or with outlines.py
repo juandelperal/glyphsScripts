@@ -19,7 +19,7 @@ for thisLayer in selectedLayers:
 	compoundList = [ g.name for g in Font.glyphs if thisGlyphName in [ c.componentName for c in g.layers[ FontMaster.id ].components ] and ( g.layers[ FontMaster.id ].width != thisLayer.width or len(g.layers[ FontMaster.id ].paths) > 0 ) ]
 	if len(compoundList) > 1 :
 		Output += "Compounds with %s: " % thisGlyphName + " ".join( compoundList ) + "\n"
-		editString += "\n/" + thisGlyphName + "/space/" + "/".join( compoundList )
+		editString += "\n/" + thisGlyphName + "/" + "/".join( compoundList )
 	else :
 		Output += "No compound glyphs with %s and different width" % thisGlyphName + "\n"
 

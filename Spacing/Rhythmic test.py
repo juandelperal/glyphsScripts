@@ -26,6 +26,7 @@ for thisLayer in selectedLayers:
 	outputString +='/'+thisGlyphName+'/'+thisGlyphName+'/'+thisGlyphName
 
 # Add one time
+outputString +="\n"
 for thisLayer in selectedLayers:
 	thisGlyphName = thisLayer.parent.name
 	outputString +='/'+thisGlyphName
